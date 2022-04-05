@@ -1,0 +1,35 @@
+    :root{
+        --space: 10px;
+        --color: rgb(0, 0, 0);
+ 
+    }
+    .externo{
+        border: 1px solid var(--color);
+        margin: 10px;
+        height: 150px;
+        width: 300px;
+     
+    }
+    .interno{
+        border: 1px solid rgb(0, 0, 0);
+        margin: 10px;
+        background-color: rgb(255, 255, 255);
+        border-radius: 10px;
+        
+    }
+    .conteudo{
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-size: 30px;
+        color: rgb(53, 21, 197);
+        text-align: center;
+        text-shadow: 2px 2px 2px black;
+        font-weight: bold;
+    }
+
+    .container{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+
+    }
+/* comentario */
+    
