@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <div>
+            <h2 id = 'idnum'>kix</h2>
+        </div>
+        <div>
+            <h1 id ='lista'>kox</h1>
+        </div>
+    </center>
+    
+    
+
+    <script>
+        
+      let lista = [30,10,2,11,14,27];
+
+      let listaOrdenada = lista.sort(function (a,b) { return a - b  });
+      document.getElementById('idnum').innerHTML = lista.[listaOrdenada.length-1];
+
+
+      let lista2 = ['maria' , 'rita' , 'ana' , 'jose' , 'miguel' , 'zeus']
+      let listacrescente = lista2.sort().reverse().length;
+      document.getElementById('lista').innerHTML = listacrescente;
+       
+      
+    </script>
+</body>
+</html>
