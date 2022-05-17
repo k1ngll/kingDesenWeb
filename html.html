@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body>
+    
+    
+    <div>
+        <input id='idnum1' type="text" placeholder="escreva aqui">
+    </div> 
+
+    <div>
+        <input id='idnum2' type="text" placeholder="escreva aqui">
+    </div> 
+    
+    <div>
+        <button id="idbutton">
+            SOMATORIO
+        </button>
+        
+    </div>
+
+
+    <p id="result">hhh</p>
+
+
+<script>
+
+    let btn = document.getElementById ("idbutton");
+    btn.addEventListener('click', soma);
+    
+    function soma(){
+
+        let num1 = document.getElementById('idnum1');
+        let num2 = document.getElementById('idnum2');
+        let resultado = document.getElementById('result');
+        
+        
+        let total = parseInt(num1.value) + Number(num2.value);
+
+        resultado.innerHTML = total.toString();
+        
+        
+    }
+</script>
+
+</body>
+</html>
